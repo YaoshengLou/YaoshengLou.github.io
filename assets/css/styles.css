@@ -489,6 +489,12 @@ img {
 }
 
 /*==================== SKILLS ====================*/
+.skills__titles i {
+  font-size: 1.2rem;
+  color: var(--first-color);
+}
+
+
 .skills__container {
   row-gap: 0;
 }
