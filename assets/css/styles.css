@@ -315,12 +315,12 @@ img {
 }
 
 .home__blob {
-  width: 320px;
+  width: 480px;
   fill: var(--first-color);
 }
 
 .home__blob-img {
-  width: 320px;
+  width: 480px;
 }
 
 .home__data {
