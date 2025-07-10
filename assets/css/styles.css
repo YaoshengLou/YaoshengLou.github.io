@@ -315,7 +315,8 @@ img {
 }
 
 .home__blob {
-  width: 200px;
+  width: 320px;
+    height: auto;
   fill: var(--first-color);
 }
 
