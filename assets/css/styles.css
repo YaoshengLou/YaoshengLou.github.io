@@ -315,12 +315,12 @@ img {
 }
 
 .home__blob {
-  width: 480px;
+  width: 320px;
   fill: var(--first-color);
 }
 
 .home__blob-img {
-  width: 480px;
+  width: 320px;
 }
 
 .home__data {
@@ -894,7 +894,7 @@ img {
   }
 
   .home__blob {
-      width: 180px;
+      width: 320px;
   }
 
   .skills__title {
@@ -1032,7 +1032,7 @@ img {
           column-gap: 2rem;
       }
       .home__blob {
-          width: 270px;
+          width: 320px;
       }
       .home__scroll {
           display: block;
@@ -1131,7 +1131,7 @@ img {
       padding: 0;
   }
   .home__blob {
-      width: 320px;
+      width: 360px;
   }
   .home__social {
       transform: translateX(-6rem);
