@@ -315,8 +315,10 @@ img {
 }
 
 .home__blob {
-  width: 200px;
+  width: 300px; 
   fill: var(--first-color);
+  transform: scale(1.4); 
+  transform-origin: center;
 }
 
 .home__blob-img {
@@ -895,6 +897,8 @@ img {
 
   .home__blob {
       width: 180px;
+    transform: scale(1.4);
+    transform-origin: center;
   }
 
   .skills__title {
@@ -1033,6 +1037,8 @@ img {
       }
       .home__blob {
           width: 270px;
+        transform: scale(1.4);
+        transform-origin: center;
       }
       .home__scroll {
           display: block;
@@ -1132,6 +1138,8 @@ img {
   }
   .home__blob {
       width: 320px;
+       transform: scale(1.4);
+        transform-origin: center;
   }
   .home__social {
       transform: translateX(-6rem);
