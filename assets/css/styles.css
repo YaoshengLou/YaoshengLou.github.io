@@ -317,7 +317,7 @@ img {
 .home__blob {
   width: 300px; 
   fill: var(--first-color);
-  transform: scale(1.4); 
+  transform: scale(1.25); 
   transform-origin: center;
 }
 
@@ -897,7 +897,7 @@ img {
 
   .home__blob {
       width: 180px;
-    transform: scale(1.4);
+    transform: scale(1.25);
     transform-origin: center;
   }
 
@@ -1037,7 +1037,7 @@ img {
       }
       .home__blob {
           width: 270px;
-        transform: scale(1.4);
+        transform: scale(1.25);
         transform-origin: center;
       }
       .home__scroll {
@@ -1138,7 +1138,7 @@ img {
   }
   .home__blob {
       width: 320px;
-       transform: scale(1.4);
+       transform: scale(1.25);
         transform-origin: center;
   }
   .home__social {
