@@ -327,7 +327,7 @@ img {
   object-fit: cover;
   border-radius: 50% / 70%; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
-  transform: translateX(40px)
+  transform: translateX(50px)
 }
 
 .home__data {
