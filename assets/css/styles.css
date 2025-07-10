@@ -444,6 +444,14 @@ img {
   width: 160px;
   border-radius: 10px; 
 }
+
+.img-caption {
+  font-size: 0.85rem;
+  color: #777;
+  text-align: center;
+  margin-top: 8px;
+  font-style: italic;
+}
     
     
 }
