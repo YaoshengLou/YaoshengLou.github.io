@@ -325,16 +325,8 @@ img {
   width: 240px;         
   height: 300px;        
   object-fit: cover;
-  border-radius: 50% / 60%; 
+  border-radius: 50% / 70%; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
-}
-
-.home__photo img {
-  width: 220px;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 50%;         
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08); 
 }
 
 .home__data {
