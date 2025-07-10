@@ -321,8 +321,12 @@ img {
   transform-origin: center;
 }
 
-.home__blob-img {
-  width: 180px;
+.home__photo img {
+  width: 240px;         
+  height: 300px;        
+  object-fit: cover;
+  border-radius: 50% / 60%; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
 }
 
 .home__photo img {
