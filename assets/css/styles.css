@@ -325,6 +325,14 @@ img {
   width: 180px;
 }
 
+.home__photo img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;         
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08); 
+}
+
 .home__data {
   grid-column: 1/3;
 }
