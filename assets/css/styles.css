@@ -316,12 +316,11 @@ img {
 
 .home__blob {
   width: 320px;
-    height: auto;
   fill: var(--first-color);
 }
 
 .home__blob-img {
-  width: 220px;
+  width: 320px;
 }
 
 .home__data {
