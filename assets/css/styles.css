@@ -425,6 +425,19 @@ img {
 }
 
 /*==================== ABOUT ====================*/
+.about__container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.about__img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .about__img {
   width: 200px;
   border-radius: .5rem;
@@ -432,18 +445,11 @@ img {
   align-self: center;
 
 }
-
 .about__description {
   text-align: center;
   margin-bottom: var(--mb-2-5);
-
-.float-img {
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  width: 160px;
-  border-radius: 10px; 
 }
+
 
 .img-caption {
   font-size: 0.85rem;
