@@ -321,7 +321,8 @@ img {
 
 .home__blob-img {
   width: 220px;
-    object-fit: cover;
+   width: auto !important;
+  height: auto !important;;
 }
 
 .home__data {
