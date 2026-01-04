@@ -1219,3 +1219,7 @@ img {
 .publications__item{
   line-height: 1.8;
 }
+
+.moments.section {
+  padding-bottom: 6rem;
+}
