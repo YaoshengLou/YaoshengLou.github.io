@@ -1185,3 +1185,18 @@ img {
       grid-template-columns: repeat(2, 1fr);
   }
 }
+
+.publications__list {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.publications__item {
+  line-height: 1.7;
+}
+
+.publications__item a {
+  color: var(--first-color);
+  word-break: break-all;
+}
+
