@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <!-- UNICONS -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <!-- 你站点的主 CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Teaching – Yaosheng Lou</title>
+
+    <!-- ✅ Teaching 页面专用的小样式（不影响其他页面） -->
+    <style>
+      .teaching__container {
+        max-width: 900px;
+      }
+
+      .teaching__lead {
+        text-align: center;
+        margin: 0 auto var(--mb-3);
+        max-width: 62ch;
+        line-height: 1.8;
+      }
+
+      .teaching__section-title {
+        font-size: var(--h2-font-size);
+        margin-bottom: var(--mb-1-5);
+      }
+
+      .teaching__list {
+        display: grid;
+        gap: 1.5rem;
+      }
+
+      .teaching__item {
+        display: grid;
+        grid-template-columns: 56px 1fr;
+        gap: 1rem;
+        padding: 1.25rem 1.25rem;
+        border-radius: 0.75rem;
+        background: var(--container-color);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+      }
+
+      .teaching__logo {
+        width: 56px;
+        height: 56px;
+        border-radius: 14px;
+        object-fit: cover;
+      }
+
+      .teaching__course {
+        font-size: var(--h3-font-size);
+        margin-bottom: 0.25rem;
+      }
+
+      .teaching__meta {
+        color: var(--text-color-light);
+        font-size: var(--small-font-size);
+        margin-bottom: 0.5rem;
+      }
+
+      .teaching__desc {
+        line-height: 1.8;
+      }
+
+      .teaching__divider {
+        height: 1px;
+        background: rgba(0, 0, 0, 0.08);
+        margin: 2rem 0;
+      }
+
+      /* 大屏更舒服 */
+      @media screen and (min-width: 768px) {
+        .teaching__item {
+          grid-template-columns: 64px 1fr;
+          padding: 1.5rem 1.5rem;
+        }
+        .teaching__logo {
+          width: 64px;
+          height: 64px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER：直接复用你现有导航（只改 active 链接即可） -->
+    <header class="header scroll-header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">Yaosheng LOU</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="index.html#home" class="nav__link">
+                <i class="uil uil-estate nav__icon"></i>
+                <p>Home</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="qualification.html" class="nav__link">
+                <i class="uil uil-graduation-cap nav__icon"></i>
+                <p>Qualification</p>
+              </a>
+            </li>
+
+            <!-- ✅ 新增 Teaching -->
+            <li class="nav__item">
+              <a href="teaching.html" class="nav__link active-link">
+                <i class="uil uil-presentation-play nav__icon"></i>
+                <p>Teaching</p>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="publications.html" class="nav__link">
+                <i class="uil uil-book-open nav__icon"></i>
+                <p>Publications</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html#moments" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i>
+                <p>Moments</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="contact.html" class="nav__link">
+                <i class="uil uil-message nav__icon"></i>
+                <p>Contact</p>
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!--==================== TEACHING ====================-->
+      <section class="section" id="teaching">
+        <h2 class="section__title">Teaching Experience</h2>
+        <span class="section__subtitle">Selected teaching and instructional roles</span>
+
+        <div class="container teaching__container">
+          <p class="teaching__lead">
+            I am passionate about education and have experience supporting student learning
+            through teaching assistance and instruction.
+          </p>
+
+          <h3 class="teaching__section-title">Teaching Assistant</h3>
+
+          <div class="teaching__list">
+            <!-- Item 1 -->
+            <article class="teaching__item">
+              <img
+                src="assets/img/rice-logo.png"
+                alt="Rice University logo"
+                class="teaching__logo"
+              />
+              <div>
+                <h4 class="teaching__course">Advanced Psychological Statistics</h4>
+                <div class="teaching__meta">Rice University · Houston, TX · Teaching Assistant</div>
+                <p class="teaching__desc">
+                  Assisted with an advanced statistical methods course for graduate students.
+                  Responsibilities included leading discussion sections, grading assignments,
+                  holding office hours, and providing one-on-one support for complex statistical
+                  concepts and methodologies.
+                </p>
+              </div>
+            </article>
+
+            <!-- Item 2 -->
+            <article class="teaching__item">
+              <img
+                src="assets/img/umn-logo.png"
+                alt="University of Minnesota logo"
+                class="teaching__logo"
+              />
+              <div>
+                <h4 class="teaching__course">Computational Linear Algebra</h4>
+                <div class="teaching__meta">University of Minnesota · Minneapolis, MN · Teaching Assistant</div>
+                <p class="teaching__desc">
+                  Supported students in computational approaches to linear algebra.
+                  Assisted with lab sessions, graded programming assignments, and provided
+                  academic support during office hours for both theoretical concepts and
+                  practical implementation.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="teaching__divider"></div>
+
+          <!-- 你也可以再加一个小节：Instructor / Guest Lecturer 等 -->
+          <h3 class="teaching__section-title">Instructor / Guest Lecturer</h3>
+
+          <div class="teaching__list">
+            <article class="teaching__item">
+              <img
+                src="assets/img/ua-logo.png"
+                alt="University at Albany logo"
+                class="teaching__logo"
+              />
+              <div>
+                <h4 class="teaching__course">EPSY XXX: Course Name</h4>
+                <div class="teaching__meta">University at Albany, SUNY · Albany, NY · Instructor</div>
+                <p class="teaching__desc">
+                  Taught/assisted instruction for undergraduate students. (Replace with your real
+                  course, term, and 1–2 lines about your teaching focus/outcomes.)
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <!-- 可选按钮：下载 teaching statement -->
+          <!--
+          <div style="display:flex; justify-content:center; margin-top: 2.5rem;">
+            <a class="button button--flex" href="assets/pdf/Teaching_Statement.pdf" download>
+              <span>Download Teaching Statement</span>
+              <i class="uil uil-download-alt button__icon"></i>
+            </a>
+          </div>
+          -->
+        </div>
+      </section>
+    </main>
+
+    <!-- 你原来的 main.js（导航/主题切换/菜单） -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
