@@ -1199,4 +1199,9 @@ img {
   color: var(--first-color);
   word-break: break-all;
 }
-
+/* ===== Publications wider layout ===== */
+.publications .qualification__sections {
+  max-width: 900px;   /* 你可以试 900 / 1000 / 1100 */
+  margin-left: auto;
+  margin-right: auto;
+}
