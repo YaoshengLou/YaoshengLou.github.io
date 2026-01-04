@@ -1,1 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Publications | Yaosheng Lou</title>
+  </head>
+
+  <body>
+    <!--==================== HEADER (same as index) ====================-->
+    <header class="header scroll-header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">Yaosheng LOU</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="index.html#home" class="nav__link">
+                <i class="uil uil-estate nav__icon"></i><p>Home</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i><p>About</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html#skills" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i><p>Skills</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html#qualification" class="nav__link">
+                <i class="uil uil-graduation-cap nav__icon"></i><p>Qualification</p>
+              </a>
+            </li>
+
+            <!-- current page -->
+            <li class="nav__item">
+              <a href="publications.html" class="nav__link active-link">
+                <i class="uil uil-book-open nav__icon"></i><p>Publications</p>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="index.html#moments" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i><p>Moments</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i><p>Contact</p>
+              </a>
+            </li>
+          </ul>
+
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <section class="publications section" id="publications-page">
+        <h2 class="section__title">Publications</h2>
+        <span class="section__subtitle">Peer-reviewed work &amp; presentations</span>
+
+        <!-- 你之前做的 Journal/Conference tabs（如果你喜欢这个交互） -->
+        <div class="qualification__tabs">
+          <div
+            class="qualification__button button--flex qualification__active"
+            data-target="#journal"
+          >
+            <i class="uil uil-book-open qualification__icon"></i>
+            <span>Journal</span>
+          </div>
+
+          <div class="qualification__button button--flex" data-target="#conference">
+            <i class="uil uil-presentation qualification__icon"></i>
+            <span>Conference</span>
+          </div>
+        </div>
+
+        <div class="qualification__sections container">
+          <div class="qualification__content qualification__active" data-content id="journal">
+            <!-- 贴你 Journal list -->
+            <ul class="publications__list">
+              <!-- ...你的 journal items... -->
+            </ul>
+          </div>
+
+          <div class="qualification__content" data-content id="conference">
+            <!-- 贴你 Conference list -->
+            <ul class="publications__list">
+              <!-- ...你的 conference items... -->
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER (optional) ====================-->
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Yaosheng LOU</h1>
+          </div>
+
+          <ul class="footer__links">
+            <li><a href="index.html#home" class="footer__link">Home</a></li>
+            <li><a href="index.html#about" class="footer__link">About</a></li>
+            <li><a href="index.html#skills" class="footer__link">Skills</a></li>
+            <li><a href="index.html#qualification" class="footer__link">Qualification</a></li>
+            <li><a href="publications.html" class="footer__link">Publications</a></li>
+            <li><a href="index.html#moments" class="footer__link">Moments</a></li>
+            <li><a href="index.html#contact" class="footer__link">Contact</a></li>
+          </ul>
+
+          <p class="footer__copy">&#169; Yaosheng LOU.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!--==================== SCRIPTS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/iconfont.js"></script>
+    <script src="assets/js/jquery2.1.4.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
 
