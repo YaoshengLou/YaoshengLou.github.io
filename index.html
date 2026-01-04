@@ -599,12 +599,36 @@
 <!--==================== PUBLICATIONS ====================-->
 <section class="publications section" id="publications">
   <h2 class="section__title">Publications</h2>
-  <span class="section__subtitle">Selected peer-reviewed work</span>
+  <span class="section__subtitle">Peer-reviewed work & presentations</span>
 
-  <div class="container">
-    <div class="publications__content">
+  <!-- Tabs（复用 Qualification 的结构） -->
+  <div class="qualification__tabs">
+    <div
+      class="qualification__button button--flex qualification__active"
+      data-target="#journal"
+    >
+      <i class="uil uil-book-open qualification__icon"></i>
+      <span>Journal</span>
+    </div>
+
+    <div
+      class="qualification__button button--flex"
+      data-target="#conference"
+    >
+      <i class="uil uil-presentation qualification__icon"></i>
+      <span>Conference</span>
+    </div>
+  </div>
+
+  <div class="qualification__sections container">
+
+    <!--==================== JOURNAL ====================-->
+    <div
+      class="qualification__content qualification__active"
+      data-content
+      id="journal"
+    >
       <ul class="publications__list">
-
         <li class="publications__item">
           Moeyaert, M., Miočević, M., <strong>Lou, Y.</strong>, &amp; Valente, M. (Under Review).
           <em>Synthesis of Single-Case Design Mediation Effects Using Two-Stage Multilevel Modeling.</em>
@@ -612,56 +636,36 @@
         </li>
 
         <li class="publications__item">
-          Moeyaert, M., <strong>Lou, Y.</strong>, Fingerhut, J., Yang, P., Miočević, M., &amp; Valente, M. (2025).
-          <em>Systematic Review of Single-Case Designs to Identify Potential Mediator Characteristics.</em>
-          <span class="journal">The Journal of Behavioral Education</span>, 1–25.
-          <a href="https://doi.org/10.1007/s10864-025-09600-z" target="_blank">https://doi.org/10.1007/s10864-025-09600-z</a>
-        </li>
-
-        <li class="publications__item">
           <strong>Lou, Y.</strong>, &amp; Colvin, K. F. (2025).
-          <em>Performance Prediction Using Educational Data Mining Techniques: A Comparative Study.</em>
+          <em>Performance Prediction Using Educational Data Mining Techniques.</em>
           <span class="journal">Discover Education</span>, 4(1), 112.
-          <a href="https://doi.org/10.1007/s44217-025-00502-w" target="_blank">https://doi.org/10.1007/s44217-025-00502-w</a>
         </li>
 
-        <li class="publications__item">
-          Moeyaert, M., Yang, P., Xue, Y., &amp; <strong>Lou, Y.</strong> (2024).
-          <em>Imbalances in Two-Level Hierarchical Linear Modeling of Single-Case Data: A Monte Carlo Simulation Study.</em>
-          <span class="journal">The Journal of Experimental Education</span>, 1–21.
-          <a href="https://doi.org/10.1080/00220973.2024.2394951" target="_blank">https://doi.org/10.1080/00220973.2024.2394951</a>
-        </li>
-
-        <li class="publications__item">
-          <strong>Lou, Y.</strong>, &amp; Sun, Q. (2021).
-          <em>Over-Reliance on Database: A Case Study of Web of Science.</em>
-          <span class="journal">Human Behavior and Emerging Technologies</span>, 3(3), 454–459.
-          <a href="https://doi.org/10.1002/hbe2.266" target="_blank">https://doi.org/10.1002/hbe2.266</a>
-        </li>
-
-        <li class="publications__item">
-          Yan, Z., Xue, Y., &amp; <strong>Lou, Y.</strong> (2021).
-          <em>Risk and Protective Factors for Intuitive and Rational Judgment of Cybersecurity Risks in a Large Sample of K–12 Students and Teachers.</em>
-          <span class="journal">Computers in Human Behavior</span>, 121, 106791.
-          <a href="https://doi.org/10.1016/j.chb.2021.106791" target="_blank">https://doi.org/10.1016/j.chb.2021.106791</a>
-        </li>
-
-        <li class="publications__item">
-          Yan, Z., Robertson, W., <strong>Lou, Y.</strong>, Robertson, T. W., &amp; Park, S. Y. (2021).
-          <em>Finding Leading Scholars in Mobile Phone Behavior: A Mixed-Method Analysis of an Emerging Interdisciplinary Field.</em>
-          <span class="journal">Scientometrics</span>, 1–19.
-          <a href="https://doi.org/10.1007/s11192-021-04184-7" target="_blank">https://doi.org/10.1007/s11192-021-04184-7</a>
-        </li>
-
-        <li class="publications__item">
-          Yan, Z., Yang, P., Xue, Y., <strong>Lou, Y.</strong>, &amp; Melissa, N. (2021).
-          <em>Validity and Reliability of Cybersecurity Judgment Questionnaire for Middle and High School Students: A Validation Study with Rasch Analysis.</em>
-          <span class="journal">Human Behavior and Emerging Technologies</span>, 3(5), 776–787.
-          <a href="https://doi.org/10.1002/hbe2.312" target="_blank">https://doi.org/10.1002/hbe2.312</a>
-        </li>
-
+        <!-- 其余 journal papers -->
       </ul>
     </div>
+
+    <!--==================== CONFERENCE ====================-->
+    <div
+      class="qualification__content"
+      data-content
+      id="conference"
+    >
+      <ul class="publications__list">
+        <li class="publications__item">
+          <strong>Lou, Y.</strong>, et al. (2025).
+          <em>Systematic Review of Single-Case Designs to Identify Mediator Characteristics.</em>
+          Paper presented at the Annual Meeting of the American Educational Research Association (AERA), Denver, CO.
+        </li>
+
+        <li class="publications__item">
+          <strong>Lou, Y.</strong>, et al. (2024).
+          <em>Impact of Imbalances in Single-Case Multilevel Analysis.</em>
+          Poster presented at AERA, Philadelphia, PA.
+        </li>
+      </ul>
+    </div>
+
   </div>
 </section>
 
