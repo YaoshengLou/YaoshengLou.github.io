@@ -1391,37 +1391,40 @@ img {
   }
 }
 
-
-.contact__socials {
-  display: flex;
-  align-items: center;
-  gap: 1.75rem;
-  margin-top: 1.5rem;
-
-  flex-wrap: nowrap;
+/* Two-column contact layout */
+.contact__two-col {
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.contact__social {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-normal);
+/* Make links look like subtitles */
+.contact__link {
   color: var(--text-color);
-
   text-decoration: none;
-  white-space: nowrap;
 }
 
-
-.contact__social i {
-  font-size: 1.5rem; 
+.contact__link:hover {
   color: var(--first-color);
+  text-decoration: underline;
 }
 
-.contact__social:hover {
-  color: var(--first-color);
+/* ORCID icon alignment */
+.contact__icon-img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+/* Mobile: stack columns */
+@media screen and (max-width: 768px) {
+  .contact__two-col {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
 }
 
 
