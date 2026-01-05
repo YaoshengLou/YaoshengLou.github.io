@@ -1391,29 +1391,34 @@ img {
   }
 }
 
-/* Contact socials - horizontal row */
+/* Contact socials - match email style & single row */
 .contact__socials {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.25rem;
+  align-items: center;
+  gap: 1.5rem;
   margin-top: 1.5rem;
+
+  flex-wrap: nowrap;
 }
 
 .contact__social {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  text-decoration: none;
-  color: var(--text-color);
+  gap: 0.4rem;
+
   font-size: var(--small-font-size);
+  color: var(--text-color);
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .contact__social i {
-  font-size: 1.25rem;
+  font-size: 1.1rem; 
 }
 
 .contact__social:hover {
   color: var(--first-color);
 }
+
 
 
