@@ -86,6 +86,7 @@
 
         <div class="contact__container container grid">
           <div>
+            <!-- Email -->
             <div class="contact__information">
               <i class="uil uil-envelope contact__icon"></i>
               <div>
@@ -94,6 +95,7 @@
               </div>
             </div>
 
+            <!-- Location -->
             <div class="contact__information">
               <i class="uil uil-map-marker contact__icon"></i>
               <div>
@@ -102,64 +104,52 @@
               </div>
             </div>
 
-            <div class="contact__information">
-              <i class="uil uil-google contact__icon"></i>
-              <div>
-                <h3 class="contact__title">Google Scholar</h3>
-                <a
-                  href="https://scholar.google.com/citations?user=4iCuKGIAAAAJ&hl=en&oi=ao"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="contact__subtitle"
-                >
-                  View Profile
-                </a>
-              </div>
-            </div>
+            <!-- Social links (horizontal) -->
+            <div class="contact__socials">
+              <a
+                class="contact__social"
+                href="https://scholar.google.com/citations?user=4iCuKGIAAAAJ&hl=en&oi=ao"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Google Scholar"
+              >
+                <i class="uil uil-google"></i>
+                <span>Scholar</span>
+              </a>
 
-            <div class="contact__information">
-              <i class="uil uil-graduation-cap contact__icon"></i>
-              <div>
-                <h3 class="contact__title">ResearchGate</h3>
-                <a
-                  href="https://www.researchgate.net/profile/Yaosheng-Lou-2/research"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="contact__subtitle"
-                >
-                  View Profile
-                </a>
-              </div>
-            </div>
+              <a
+                class="contact__social"
+                href="https://www.researchgate.net/profile/Yaosheng-Lou-2/research"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="ResearchGate"
+              >
+                <i class="uil uil-graduation-cap"></i>
+                <span>ResearchGate</span>
+              </a>
 
-            <div class="contact__information">
-              <i class="uil uil-id-card contact__icon"></i>
-              <div>
-                <h3 class="contact__title">ORCID</h3>
-                <a
-                  href="https://orcid.org/0000-0001-8879-8376"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="contact__subtitle"
-                >
-                  0000-0001-8879-8376
-                </a>
-              </div>
-            </div>
+              <a
+                class="contact__social"
+                href="https://orcid.org/0000-0001-8879-8376"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="ORCID"
+              >
+                <!-- 若 uil-id-card 不显示，可改成 uil-link -->
+                <i class="uil uil-id-card"></i>
+                <span>ORCID</span>
+              </a>
 
-            <div class="contact__information">
-              <i class="uil uil-github contact__icon"></i>
-              <div>
-                <h3 class="contact__title">GitHub</h3>
-                <a
-                  href="https://github.com/YaoshengLou"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="contact__subtitle"
-                >
-                  github.com/YaoshengLou
-                </a>
-              </div>
+              <a
+                class="contact__social"
+                href="https://github.com/YaoshengLou"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="GitHub"
+              >
+                <i class="uil uil-github"></i>
+                <span>GitHub</span>
+              </a>
             </div>
           </div>
         </div>
@@ -176,7 +166,9 @@
 
           <ul class="footer__links">
             <li><a href="index.html#home" class="footer__link">Home</a></li>
-            <li><a href="publications.html" class="footer__link">Publications</a></li>
+            <li>
+              <a href="publications.html" class="footer__link">Publications</a>
+            </li>
             <li><a href="teaching.html" class="footer__link">Teaching</a></li>
             <li><a href="service.html" class="footer__link">Activities</a></li>
             <li><a href="contact.html" class="footer__link">Contact</a></li>
