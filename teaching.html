@@ -11,12 +11,10 @@
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
 
-    <!-- 你站点的主 CSS -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <title>Teaching – Yaosheng Lou</title>
 
-    <!-- ✅ Teaching 页面专用的小样式（不影响其他页面） -->
     <style>
       .teaching__container {
         max-width: 900px;
@@ -77,7 +75,6 @@
         margin: 2rem 0;
       }
 
-      /* 大屏更舒服 */
       @media screen and (min-width: 768px) {
         .teaching__item {
           grid-template-columns: 64px 1fr;
@@ -92,7 +89,7 @@
   </head>
 
   <body>
-    <!-- HEADER：直接复用你现有导航（只改 active 链接即可） -->
+
     <header class="header scroll-header" id="header">
       <nav class="nav container">
         <a href="index.html" class="nav__logo">Yaosheng LOU</a>
@@ -106,13 +103,12 @@
               </a>
             </li>
             <li class="nav__item">
-              <a href="qualification.html" class="nav__link">
-                <i class="uil uil-graduation-cap nav__icon"></i>
-                <p>Qualification</p>
+              <a href="publications.html" class="nav__link">
+                <i class="uil uil-book-open nav__icon"></i>
+                <p>Publications</p>
               </a>
             </li>
-
-            <!-- ✅ 新增 Teaching -->
+        
             <li class="nav__item">
               <a href="teaching.html" class="nav__link active-link">
                 <i class="uil uil-presentation-play nav__icon"></i>
@@ -120,12 +116,6 @@
               </a>
             </li>
 
-            <li class="nav__item">
-              <a href="publications.html" class="nav__link">
-                <i class="uil uil-book-open nav__icon"></i>
-                <p>Publications</p>
-              </a>
-            </li>
             <li class="nav__item">
               <a href="index.html#moments" class="nav__link">
                 <i class="uil uil-scenery nav__icon"></i>
@@ -170,7 +160,7 @@
               />
               <div>
                 <h4 class="teaching__course">Introductory Statistics in Human Development</h4>
-                <div class="teaching__meta">University at Albany, SUNY · Albany, NY</div>
+                <div class="teaching__meta">University at Albany, SUNY | Albany, NY</div>
                 <div class="teaching__term">Fall 2023 & Spring 2024</div>
                 <p class="teaching__desc">
                   This course provides an introduction to statistical methods for analyzing human development data, 
@@ -185,15 +175,14 @@
               <img
                 src="assets/img/UAlbany-logo.jpg"
                 alt="UAlbany logo"
+                class="teaching__logo"
               />
               <div>
-                <h4 class="teaching__course">Computational Linear Algebra</h4>
-                <div class="teaching__meta">University of Minnesota · Minneapolis, MN · Teaching Assistant</div>
+                <h4 class="teaching__course">Understanding Research in Human Development</h4>
+                <div class="teaching__meta">University at Albany, SUNY | Albany, NY</div>
+                <div class="teaching__term">Fall 2024</div>
                 <p class="teaching__desc">
-                  Supported students in computational approaches to linear algebra.
-                  Assisted with lab sessions, graded programming assignments, and provided
-                  academic support during office hours for both theoretical concepts and
-                  practical implementation.
+                  This course introduces students to the most important types of research in human development and the criteria by which consumers of research can judge if the stated findings are credible.
                 </p>
               </div>
             </article>
@@ -201,10 +190,26 @@
 
           <div class="teaching__divider"></div>
 
-          <!-- 你也可以再加一个小节：Instructor / Guest Lecturer 等 -->
-          <h3 class="teaching__section-title">Instructor / Guest Lecturer</h3>
+          <h3 class="teaching__section-title">Guest Lecturer</h3>
 
           <div class="teaching__list">
+              <article class="teaching__item">
+              <img
+               src="assets/img/UAlbany-logo.jpg"
+                alt="UAlbany logo"
+                class="teaching__logo"
+              />
+              <div>
+                <h4 class="teaching__course">Systematic Review and Meta-Analysis</h4>
+                <div class="teaching__meta">University at Albany, SUNY | Albany, NY </div>
+                <div class="teaching__term">Fall 2025</div>
+                <p class="teaching__desc">
+                 Provided instruction on applying AI (e.g., Rayyan, DistillerSR) in systematic review and meta-analysis, 
+                  and designed large language model (LLM) prompts to support research question refinement, search query development, and data extraction. 
+                </p>
+              </div>
+            </article>
+            
             <article class="teaching__item">
               <img
                src="assets/img/UAlbany-logo.jpg"
@@ -212,11 +217,28 @@
                 class="teaching__logo"
               />
               <div>
-                <h4 class="teaching__course">EPSY XXX: Course Name</h4>
-                <div class="teaching__meta">University at Albany, SUNY · Albany, NY · Instructor</div>
+                <h4 class="teaching__course">Statistical Methods I</h4>
+                <div class="teaching__meta">University at Albany, SUNY | Albany, NY </div>
+                <div class="teaching__term">Fall 2022 & Spring 2024</div>
                 <p class="teaching__desc">
-                  Taught/assisted instruction for undergraduate students. (Replace with your real
-                  course, term, and 1–2 lines about your teaching focus/outcomes.)
+                  Led weekly 1.5-hour sessions for half of the course, providing instruction in RStudio and SPSS for data analysis and interpretation, including z-tests, t-tests, correlation, and regression analyses.
+                </p>
+              </div>
+            </article>
+
+            
+              <article class="teaching__item">
+              <img
+               src="assets/img/UAlbany-logo.jpg"
+                alt="UAlbany logo"
+                class="teaching__logo"
+              />
+              <div>
+                <h4 class="teaching__course">Regression</h4>
+                <div class="teaching__meta">University at Albany, SUNY | Albany, NY </div>
+                <div class="teaching__term">Spring 2024</div>
+                <p class="teaching__desc">
+                  Led weekly 1.5-hour sessions for half of the course, providing instruction in RStudio and SPSS for data analysis and interpretation, including bivariate and multiple regression analysis.
                 </p>
               </div>
             </article>
