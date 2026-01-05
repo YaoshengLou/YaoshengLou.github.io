@@ -1451,15 +1451,25 @@ img {
 }
 
 
+/* Light mode (default) */
 .contact__title-link {
-  color: #111;              /* 接近纯黑，更稳重 */
+  color: #111;
   text-decoration: none;
 }
 
 .contact__title-link:hover {
-  color: #111;              /* hover 也不变色（最学术） */
+  color: #111;
   text-decoration: underline;
 }
 
+/* Dark mode */
+body.dark-theme .contact__title-link {
+  color: #fff;           
+}
+
+body.dark-theme .contact__title-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
 
 
