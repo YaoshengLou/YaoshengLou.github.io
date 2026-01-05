@@ -1391,24 +1391,25 @@ img {
   }
 }
 
+/* Contact socials - horizontal row */
 .contact__socials {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-top: 2rem;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
 }
 
 .contact__social {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  font-size: var(--small-font-size);
-  color: var(--text-color);
+  gap: 0.5rem;
   text-decoration: none;
+  color: var(--text-color);
+  font-size: var(--small-font-size);
 }
 
 .contact__social i {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 
 .contact__social:hover {
