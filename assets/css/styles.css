@@ -1229,3 +1229,114 @@ img {
   font-size: var(--small-font-size);
   margin-bottom: 0.5rem;
 }
+
+
+/* ====== Card Section Layout (like your screenshot) ====== */
+.card-section {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--container-color);
+  border-radius: 1rem;
+  box-shadow: 0 1px 10px rgba(0,0,0,.06);
+  padding: 1.25rem 1.25rem;
+}
+
+/* section header inside card */
+.card-section__header {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  margin-bottom: 1rem;
+}
+
+.card-section__icon {
+  font-size: 1.25rem;
+  color: var(--title-color);
+}
+
+.card-section__title {
+  font-size: var(--h3-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+/* list */
+.entry-list {
+  display: grid;
+  gap: 1rem;
+}
+
+/* each row: left info + right date */
+.entry {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* left part: logo + text */
+.entry__left {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: .75rem;
+  align-items: start;
+}
+
+.entry__logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* main line (name + with ...) */
+.entry__headline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  align-items: baseline;
+  line-height: 1.35;
+}
+
+.entry__name {
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.entry__with {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+/* sub lines */
+.entry__sub {
+  margin-top: .25rem;
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+  line-height: 1.6;
+}
+
+/* right date */
+.entry__date {
+  color: var(--text-color-light);
+  font-size: var(--small-font-size);
+  white-space: nowrap;
+}
+
+/* divider feel (optional) */
+.entry + .entry {
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0,0,0,.06);
+}
+
+/* mobile spacing */
+@media screen and (max-width: 480px) {
+  .entry {
+    grid-template-columns: 1fr;
+    gap: .5rem;
+  }
+  .entry__date {
+    justify-self: start;
+  }
+}
+
