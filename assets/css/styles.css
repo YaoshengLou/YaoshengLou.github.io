@@ -1449,14 +1449,15 @@ img {
     margin-top: 0;
   }
 }
-/* Title links: clickable but look like normal titles */
+
+
 .contact__title-link {
-  color: var(--title-color);
+  color: #111;              /* 接近纯黑，更稳重 */
   text-decoration: none;
 }
 
 .contact__title-link:hover {
-  color: var(--first-color);
+  color: #111;              /* hover 也不变色（最学术） */
   text-decoration: underline;
 }
 
