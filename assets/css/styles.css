@@ -1472,4 +1472,7 @@ body.dark-theme .contact__title-link:hover {
   text-decoration: underline;
 }
 
+.slides-download {
+  margin-top: 1.5rem; /* 可调：1rem / 1.5rem / 2rem */
+}
 
