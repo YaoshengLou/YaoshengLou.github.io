@@ -1449,6 +1449,16 @@ img {
     margin-top: 0;
   }
 }
+/* Title links: clickable but look like normal titles */
+.contact__title-link {
+  color: var(--title-color);
+  text-decoration: none;
+}
+
+.contact__title-link:hover {
+  color: var(--first-color);
+  text-decoration: underline;
+}
 
 
 
