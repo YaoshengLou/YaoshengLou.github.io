@@ -1393,14 +1393,21 @@ img {
 
 /* Two-column contact layout */
 .contact__two-col {
+  display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 3rem;
+  column-gap: 4rem;
+  align-items: start;        
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Make links look like subtitles */
+.contact__information {
+  display: flex;
+  align-items: flex-start;  
+  column-gap: 0.75rem;
+}
+
 .contact__link {
   color: var(--text-color);
   text-decoration: none;
@@ -1411,15 +1418,7 @@ img {
   text-decoration: underline;
 }
 
-/* ORCID icon alignment */
-.contact__icon-img {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-right: 0.75rem;
-  margin-top: 0.25rem;
-}
 
-/* Mobile: stack columns */
 @media screen and (max-width: 768px) {
   .contact__two-col {
     grid-template-columns: 1fr;
@@ -1427,5 +1426,34 @@ img {
   }
 }
 
+/* Right column refinements */
+.contact__right-title {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+  margin-bottom: 1rem;
+  letter-spacing: 0.03em;
+}
+
+.contact__right .contact__information {
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.75rem;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.contact__right .contact__information:hover {
+  background: var(--container-color);
+  transform: translateY(-1px);
+}
+
+/* Links look consistent */
+.contact__link {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.contact__link:hover {
+  color: var(--first-color);
+  text-decoration: underline;
+}
 
 
