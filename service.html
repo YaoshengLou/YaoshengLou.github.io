@@ -1,1 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
+    <!-- UNICONS -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>service – Yaosheng Lou</title>
+
+    <style>
+      .teaching__container {
+        max-width: 900px;
+      }
+
+      .teaching__lead {
+        text-align: center;
+        margin: 0 auto var(--mb-3);
+        max-width: 62ch;
+        line-height: 1.8;
+      }
+
+      .teaching__section-title {
+        font-size: var(--h2-font-size);
+        margin-bottom: var(--mb-1-5);
+      }
+
+      .teaching__list {
+        display: grid;
+        gap: 1.5rem;
+      }
+
+      .teaching__item {
+        display: grid;
+        grid-template-columns: 56px 1fr;
+        gap: 1rem;
+        padding: 1.25rem 1.25rem;
+        border-radius: 0.75rem;
+        background: var(--container-color);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+      }
+
+      .teaching__logo {
+        width: 56px;
+        height: 56px;
+        border-radius: 14px;
+        object-fit: cover;
+      }
+
+      .teaching__course {
+        font-size: var(--h3-font-size);
+        margin-bottom: 0.25rem;
+      }
+
+      .teaching__meta {
+        color: var(--text-color-light);
+        font-size: var(--small-font-size);
+        margin-bottom: 0.5rem;
+      }
+
+      .teaching__desc {
+        line-height: 1.8;
+      }
+
+      .teaching__divider {
+        height: 1px;
+        background: rgba(0, 0, 0, 0.08);
+        margin: 2rem 0;
+      }
+
+      @media screen and (min-width: 768px) {
+        .teaching__item {
+          grid-template-columns: 64px 1fr;
+          padding: 1.5rem 1.5rem;
+        }
+        .teaching__logo {
+          width: 64px;
+          height: 64px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <header class="header scroll-header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">Yaosheng LOU</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="index.html#home" class="nav__link">
+                <i class="uil uil-estate nav__icon"></i>
+                <p>Home</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="publications.html" class="nav__link">
+                <i class="uil uil-book-open nav__icon"></i>
+                <p>Publications</p>
+              </a>
+            </li>
+        
+            <li class="nav__item">
+              <a href="teaching.html" class="nav__link active-link">
+                <i class="uil uil-presentation-play nav__icon"></i>
+                <p>Teaching</p>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="service.html" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i>
+                <p>Service</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="contact.html" class="nav__link">
+                <i class="uil uil-message nav__icon"></i>
+                <p>Contact</p>
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!--==================== TEACHING ====================-->
+      <section class="section" id="service">
+        <h2 class="section__title">Work, Professional Experience & Service</h2>
+        <span class="section__subtitle">Teaching, for me, is careful work</span>
+
+         <div class="container teaching__container">
+          <h3 class="teaching__section-title">Work Experience</h3>
+
+          <div class="teaching__list">
+            <!-- Item 1 -->
+            <article class="teaching__item">
+              <img
+                src="assets/img/NYSED-logo.jpg"
+                alt="NYSED logo"
+                class="teaching__logo"
+              />
+              <div>
+                <h4 class="teaching__course">Psychometrician</h4>
+                <div class="teaching__meta">Office of State Assessment, New York State Education Department | Albany, NY</div>
+                <div class="teaching__term">2024-2025</div>
+                <p class="teaching__desc">
+                  Analyzed large-scale assessment data and interpreted results, coordinated program analyses, 
+                  developed automated workflows for data processing and analysis, and created visualizations to effectively 
+                  communicate findings to technical and non-technical stakeholders. 
+                </p>
+              </div>
+            </article>
+
+            <!-- Item 2 -->
+            <article class="teaching__item">
+              <img
+                src="assets/img/UAlbany-logo.jpg"
+                alt="UAlbany logo"
+                class="teaching__logo"
+              />
+              <div>
+                <h4 class="teaching__course">Understanding Research in Human Development</h4>
+                <div class="teaching__meta">University at Albany, SUNY | Albany, NY</div>
+                <div class="teaching__term">Fall 2024</div>
+                <p class="teaching__desc">
+                  This course introduces students to the most important types of research in human development and the criteria by which consumers of research can judge if the stated findings are credible.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="teaching__divider"></div>
+
+          <h3 class="teaching__section-title">Guest Lecturer</h3>
+
+          <div class="teaching__list">
+              <article class="teaching__item">
+              <img
+               src="assets/img/UAlbany-logo.jpg"
+                alt="UAlbany logo"
+                class="teaching__logo"
+              />
+              <div>
+                <h4 class="teaching__course">Systematic Review and Meta-Analysis</h4>
+                <div class="teaching__meta">University at Albany, SUNY | Albany, NY </div>
+                <div class="teaching__term">Fall 2025</div>
+                <p class="teaching__desc">
+                 Provided instruction on applying AI (e.g., Rayyan, DistillerSR) in systematic review and meta-analysis, 
+                  and designed large language model (LLM) prompts to support research question refinement, search query development, and data extraction. 
+                </p>
+              </div>
+            </article>
+            
+            <article class="teaching__item">
+              <img
+               src="assets/img/UAlbany-logo.jpg"
+                alt="UAlbany logo"
+                class="teaching__logo"
+              />
+              <div>
+                <h4 class="teaching__course">Statistical Methods I</h4>
+                <div class="teaching__meta">University at Albany, SUNY | Albany, NY </div>
+                <div class="teaching__term">Fall 2022 & Spring 2024</div>
+                <p class="teaching__desc">
+                  Led weekly 1.5-hour sessions for half of the course, providing instruction in RStudio and SPSS for data analysis and interpretation, including z-tests, t-tests, correlation, and regression analyses.
+                </p>
+              </div>
+            </article>
+
+            
+              <article class="teaching__item">
+              <img
+               src="assets/img/UAlbany-logo.jpg"
+                alt="UAlbany logo"
+                class="teaching__logo"
+              />
+              <div>
+                <h4 class="teaching__course">Regression</h4>
+                <div class="teaching__meta">University at Albany, SUNY | Albany, NY </div>
+                <div class="teaching__term">Spring 2024</div>
+                <p class="teaching__desc">
+                  Led weekly 1.5-hour sessions for half of the course, providing instruction in RStudio and SPSS for data analysis and interpretation, including bivariate and multiple regression analysis.
+                </p>
+              </div>
+            </article>
+          </div>
+
+             <div class="teaching__divider"></div>
+
+          <h3 class="teaching__section-title">Teaching Assistance</h3>
+          <div class="teaching__list">
+              <article class="teaching__item">
+              <img
+               src="assets/img/UAlbany-logo.jpg"
+                alt="UAlbany logo"
+                class="teaching__logo"
+              />
+              <div>
+                <h4 class="teaching__course">Introduction to Education Psychology</h4>
+                <div class="teaching__meta">University at Albany, SUNY | Albany, NY </div>
+                <div class="teaching__term">Fall 2022</div>
+                <p class="teaching__desc">
+                 Assisted the instructor in an undergraduate course on educational psychology. Responsibilities included leading discussion sections, grading assignments and exams, and holding regular office hours.
+                </p>
+              </div>
+            </article>
+            
+            <article class="teaching__item">
+              <img
+               src="assets/img/UAlbany-logo.jpg"
+                alt="UAlbany logo"
+                class="teaching__logo"
+              />
+              <div>
+                <h4 class="teaching__course">Statistical Methods II</h4>
+                <div class="teaching__meta">University at Albany, SUNY | Albany, NY </div>
+                <div class="teaching__term">Spring 2024</div>
+                <p class="teaching__desc">
+                  Supported graduate student in statistical data analysis using SPSS and RStudio, including assessment grading and regularly scheduled office hours.
+                </p>
+              </div>
+            </article>
+
+              <article class="teaching__item">
+              <img
+               src="assets/img/UAlbany-logo.jpg"
+                alt="UAlbany logo"
+                class="teaching__logo"
+              />
+              <div>
+                <h4 class="teaching__course">Multivariate Methods for Research</h4>
+                <div class="teaching__meta">University at Albany, SUNY | Albany, NY </div>
+                <div class="teaching__term">Fall 2024</div>
+                <p class="teaching__desc">
+                  Provided graduate students with individualized support in advanced statistical concepts, graded assignments, and offered office-hour assistance focused on both theoretical understanding and practical implementation.
+                </p>
+              </div>
+            </article>
+          </div>
+
+           
+        </div>
+      </section>
+    </main>
+
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Yaosheng LOU</h1>
+          </div>
+
+          <ul class="footer__links">
+            <li><a href="index.html#home" class="footer__link">Home</a></li>
+            <li><a href="publications.html" class="footer__link">Publications</a></li>
+            <li><a href="teaching.html" class="footer__link">Teaching</a></li>
+            <li><a href="index.html#moments" class="footer__link">Moments</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+          </ul>
+
+          <p class="footer__copy">&#169; Yaosheng LOU</p>
+        </div>
+      </div>
+    </footer>
+
+    <!--==================== SCRIPTS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/iconfont.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
