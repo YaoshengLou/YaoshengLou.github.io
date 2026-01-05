@@ -1390,52 +1390,37 @@ img {
     padding: 1.35rem 1.5rem;
   }
 }
-/* ===== Contact layout: better overall balance ===== */
+/* ===== Contact layout: balanced and clean ===== */
 .contact__two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 3rem;          /* slightly tighter than 4rem */
+  column-gap: 3rem;
   align-items: start;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Left column slightly down (as requested) */
+/* Left column slightly lower */
 .contact__left {
-  margin-top: 1.8rem;        /* adjust: 1.5~2.5rem */
+  margin-top: 1.8rem;
 }
 
-/* Keep each info row consistent */
+/* Base row layout */
 .contact__information {
   display: flex;
   align-items: flex-start;
   column-gap: 0.75rem;
 }
 
-/* Right column: more compact + refined */
-.contact__right-title {
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
-  margin-bottom: 0.6rem;     /* tighter */
-  letter-spacing: 0.03em;
-}
-
-/* Make the 4 items denser */
+/* Right column: denser */
 .contact__right .contact__information {
-  padding: 0.35rem 0.6rem;   /* smaller padding */
-  margin-bottom: 0.2rem;     /* tighter vertical spacing */
-  border-radius: 0.75rem;
-  transition: background 0.15s ease, transform 0.15s ease;
+  padding: 0.3rem 0.6rem;
+  margin-bottom: 0.15rem;
+  border-radius: 0.6rem;
 }
 
-/* Subtle hover (optional but nice) */
-.contact__right .contact__information:hover {
-  background: var(--container-color);
-  transform: translateY(-1px);
-}
-
-/* Link style consistent with subtitle */
+/* Links look like text, not buttons */
 .contact__link {
   color: var(--text-color);
   text-decoration: none;
@@ -1446,15 +1431,15 @@ img {
   text-decoration: underline;
 }
 
-/* Mobile: stack columns */
+/* Mobile */
 @media screen and (max-width: 768px) {
   .contact__two-col {
     grid-template-columns: 1fr;
     row-gap: 2rem;
   }
 
-  /* On mobile, don't push left column down too much */
   .contact__left {
     margin-top: 0;
   }
 }
+
