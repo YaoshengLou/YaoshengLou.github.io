@@ -1390,20 +1390,25 @@ img {
     padding: 1.35rem 1.5rem;
   }
 }
-/* ===== Contact layout: balanced and clean ===== */
+
+/* ===== Contact layout: centered & compact ===== */
 .contact__two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 3rem;
+  column-gap: 2.5rem;       
   align-items: start;
+
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
+
+
+  padding-left: 2.5rem;
 }
 
-/* Left column slightly lower */
+/* Left column slightly lower (as requested) */
 .contact__left {
-  margin-top: 1.8rem;
+  margin-top: 1.6rem;       
 }
 
 /* Base row layout */
@@ -1411,16 +1416,17 @@ img {
   display: flex;
   align-items: flex-start;
   column-gap: 0.75rem;
+
+
+  margin-bottom: 1.1rem;
 }
 
-/* Right column: denser */
+/* Right column: even denser */
 .contact__right .contact__information {
-  padding: 0.3rem 0.6rem;
-  margin-bottom: 0.15rem;
-  border-radius: 0.6rem;
+  margin-bottom: 0.85rem;   
 }
 
-/* Links look like text, not buttons */
+/* Links look like text */
 .contact__link {
   color: var(--text-color);
   text-decoration: none;
@@ -1431,15 +1437,18 @@ img {
   text-decoration: underline;
 }
 
-/* Mobile */
+/* Mobile: stack columns */
 @media screen and (max-width: 768px) {
   .contact__two-col {
     grid-template-columns: 1fr;
-    row-gap: 2rem;
+    row-gap: 1.8rem;
+    padding-left: 0;      
   }
 
   .contact__left {
     margin-top: 0;
   }
 }
+
+
 
