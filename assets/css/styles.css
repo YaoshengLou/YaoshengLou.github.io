@@ -1391,14 +1391,28 @@ img {
   }
 }
 
-.contact__subtitle {
-  color: var(--text-color);
-  text-decoration: none;
-  font-size: var(--small-font-size);
+.contact__socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
-.contact__subtitle:hover {
-  color: var(--first-color);
-  text-decoration: underline;
+.contact__social {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  text-decoration: none;
 }
+
+.contact__social i {
+  font-size: 1.2rem;
+}
+
+.contact__social:hover {
+  color: var(--first-color);
+}
+
 
