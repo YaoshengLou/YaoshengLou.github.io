@@ -833,8 +833,8 @@ img {
 .footer__copy {
   font-size: var(--smaller-font-size);
   text-align: center;
-  color: var(--text-color-light);
-  margin-top: var(--mb-3)
+  color: #ffffff;          /* ← 改成纯白 */
+  margin-top: var(--mb-3);
 }
 
 .footer__title,
