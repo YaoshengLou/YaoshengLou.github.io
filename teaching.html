@@ -112,22 +112,24 @@
       }
 
       @media screen and (max-width: 768px) {
-        .teaching__item {
-          grid-template-columns: 1fr;
-          gap: 0.75rem;
-          padding: 1rem;
-        }
+  .teaching__item {
+    grid-template-columns: 48px 1fr;
+    gap: 0.75rem;
+    padding: 1rem;
+    align-items: start;
+  }
 
-        .teaching__logo {
-          width: 48px;
-          height: 48px;
-          border-radius: 12px;
-        }
+  .teaching__logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+  }
 
-        .teaching__section-title {
-          font-size: 1.1rem;
-        }
-      }
+  .teaching__section-title {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+}
     </style>
   </head>
 
