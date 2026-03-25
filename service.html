@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
-    <!-- UNICONS -->
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
@@ -16,6 +15,15 @@
     <title>Activities – Yaosheng Lou</title>
 
     <style>
+      .service__page {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        box-sizing: border-box;
+      }
+
       .teaching__container {
         max-width: 900px;
       }
@@ -30,6 +38,7 @@
       .teaching__section-title {
         font-size: var(--h2-font-size);
         margin-bottom: var(--mb-1-5);
+        line-height: 1.4;
       }
 
       .teaching__list {
@@ -57,9 +66,19 @@
       .teaching__course {
         font-size: var(--h3-font-size);
         margin-bottom: 0.25rem;
+        line-height: 1.4;
       }
 
       .teaching__meta {
+        color: var(--text-color-light);
+        font-size: var(--small-font-size);
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
+        overflow-wrap: break-word;
+        word-break: break-word;
+      }
+
+      .teaching__term {
         color: var(--text-color-light);
         font-size: var(--small-font-size);
         margin-bottom: 0.5rem;
@@ -67,6 +86,8 @@
 
       .teaching__desc {
         line-height: 1.8;
+        overflow-wrap: break-word;
+        word-break: break-word;
       }
 
       .teaching__divider {
@@ -80,16 +101,35 @@
           grid-template-columns: 64px 1fr;
           padding: 1.5rem 1.5rem;
         }
+
         .teaching__logo {
           width: 64px;
           height: 64px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .teaching__item {
+          grid-template-columns: 1fr;
+          gap: 0.75rem;
+          padding: 1rem;
+        }
+
+        .teaching__logo {
+          width: 48px;
+          height: 48px;
+          border-radius: 12px;
+        }
+
+        .teaching__section-title,
+        .service__section-title {
+          font-size: 1.1rem;
         }
       }
     </style>
   </head>
 
   <body>
-
     <header class="header scroll-header" id="header">
       <nav class="nav container">
         <a href="index.html" class="nav__logo">Yaosheng LOU</a>
@@ -108,14 +148,12 @@
                 <p>Publications</p>
               </a>
             </li>
-        
             <li class="nav__item">
               <a href="teaching.html" class="nav__link">
                 <i class="uil uil-presentation-play nav__icon"></i>
                 <p>Teaching</p>
               </a>
             </li>
-
             <li class="nav__item">
               <a href="service.html" class="nav__link active-link">
                 <i class="uil uil-scenery nav__icon"></i>
@@ -142,112 +180,123 @@
     </header>
 
     <main class="main">
-      <!--==================== work ====================-->
       <section class="section" id="service">
         <h2 class="section__title">Academic & Professional Activities</h2>
         <span class="section__subtitle">Serious work, with real-world impact</span>
 
-         <div class="container teaching__container">
-          <h3 class="teaching__section-title">Work Experience</h3>
+        <div class="container service__page">
+          <div class="teaching__container">
+            <h3 class="teaching__section-title">Work Experience</h3>
 
-          <div class="teaching__list">
-            <!-- Item 1 -->
-            <article class="teaching__item">
-              <img
-                src="assets/img/NYSED-logo.png"
-                alt="NYSED logo"
-                class="teaching__logo"
-              />
-              <div>
-                <h4 class="teaching__course">Psychometrician</h4>
-                <div class="teaching__meta">Office of State Assessment, New York State Education Department | Albany, NY</div>
-                <div class="teaching__term">2024-2025</div>
-                <p class="teaching__desc">
-                  Analyzed large-scale assessment data and interpreted results, coordinated program analyses, 
-                  developed automated workflows for data processing and analysis, and created visualizations to effectively 
-                  communicate findings to technical and non-technical stakeholders. 
-                </p>
-              </div>
-            </article>
+            <div class="teaching__list">
+              <article class="teaching__item">
+                <img
+                  src="assets/img/NYSED-logo.png"
+                  alt="NYSED logo"
+                  class="teaching__logo"
+                />
+                <div>
+                  <h4 class="teaching__course">Psychometrician</h4>
+                  <div class="teaching__meta">
+                    Office of State Assessment, New York State Education Department | Albany, NY
+                  </div>
+                  <div class="teaching__term">2024-2025</div>
+                  <p class="teaching__desc">
+                    Analyzed large-scale assessment data and interpreted results, coordinated
+                    program analyses, developed automated workflows for data processing and
+                    analysis, and created visualizations to effectively communicate findings
+                    to technical and non-technical stakeholders.
+                  </p>
+                </div>
+              </article>
 
-            <!-- Item 2 -->
-            <article class="teaching__item">
-              <img
-                src="assets/img/SCCC-logo.jpg"
-                alt="SCCC logo"
-                class="teaching__logo"
-              />
-              <div>
-                <h4 class="teaching__course">Research Associate</h4>
-                <div class="teaching__meta">Institutional Research Department, Schenectady County Community College, SUNY | Albany, NY</div>
-                <div class="teaching__term">2023</div>
-                <p class="teaching__desc">
-                  Implemented logistic regression and machine learning models based on more than twenty years of academic records to predict student retention, 
-                  coordinated institutional research initiatives, and disseminated research findings to support data-informed planning and decision-making.
-                </p>
-              </div>
-            </article>
+              <article class="teaching__item">
+                <img
+                  src="assets/img/SCCC-logo.jpg"
+                  alt="SCCC logo"
+                  class="teaching__logo"
+                />
+                <div>
+                  <h4 class="teaching__course">Research Associate</h4>
+                  <div class="teaching__meta">
+                    Institutional Research Department, Schenectady County Community College,
+                    SUNY | Albany, NY
+                  </div>
+                  <div class="teaching__term">2023</div>
+                  <p class="teaching__desc">
+                    Implemented logistic regression and machine learning models based on more
+                    than twenty years of academic records to predict student retention,
+                    coordinated institutional research initiatives, and disseminated research
+                    findings to support data-informed planning and decision-making.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <h3 class="service__section-title">Service</h3>
+
+            <div class="service__list">
+              <article class="service__item">
+                <div class="service__row">
+                  <div>
+                    <h4 class="service__title">Human Behavior and Emerging Technologies</h4>
+                    <p class="service__role">Reviewer</p>
+                  </div>
+                  <div class="service__term">2021 – Present</div>
+                </div>
+              </article>
+
+              <article class="service__item">
+                <div class="service__row">
+                  <div>
+                    <h4 class="service__title">The Journal of Experimental Education</h4>
+                    <p class="service__role">Reviewer</p>
+                  </div>
+                  <div class="service__term">2023 – Present</div>
+                </div>
+              </article>
+
+              <article class="service__item">
+                <div class="service__row">
+                  <div>
+                    <h4 class="service__title">Computers in Human Behavior</h4>
+                    <p class="service__role">Reviewer</p>
+                  </div>
+                  <div class="service__term">2022 – Present</div>
+                </div>
+              </article>
+
+              <article class="service__item">
+                <div class="service__row">
+                  <div>
+                    <h4 class="service__title">
+                      Registered Graduate Student Organization of Educational Psychology and Methodology,
+                      University at Albany, SUNY
+                    </h4>
+                    <p class="service__role">Vice President</p>
+                  </div>
+                  <div class="service__term">2022 – 2023</div>
+                </div>
+              </article>
+
+              <article class="service__item">
+                <div class="service__row">
+                  <div>
+                    <h4 class="service__title">
+                      Registered Graduate Student Organization of the Sky Happiness Club,
+                      University at Albany, SUNY
+                    </h4>
+                    <p class="service__role">Assembly Representative</p>
+                  </div>
+                  <div class="service__term">2022 – 2023</div>
+                </div>
+              </article>
+            </div>
           </div>
-      <h3 class="service__section-title">Service</h3>
-
-<div class="service__list">
-  <article class="service__item">
-    <div class="service__row">
-      <div>
-        <h4 class="service__title">Human Behavior and Emerging Technologies</h4>
-        <p class="service__role">Reviewer</p>
-      </div>
-      <div class="service__term">2021 – Present</div>
-    </div>
-  </article>
-
-  <article class="service__item">
-    <div class="service__row">
-      <div>
-        <h4 class="service__title">The Journal of Experimental Education</h4>
-        <p class="service__role">Reviewer</p>
-      </div>
-      <div class="service__term">2023 – Present</div>
-    </div>
-  </article>
-
-  <article class="service__item">
-    <div class="service__row">
-      <div>
-        <h4 class="service__title">Computers in Human Behavior</h4>
-        <p class="service__role">Reviewer</p>
-      </div>
-      <div class="service__term">2022 – Present</div>
-    </div>
-  </article>
-
-  <article class="service__item">
-    <div class="service__row">
-      <div>
-        <h4 class="service__title">Registered Graduate Student Organization of Educational Psychology and Methodology, University at Albany, SUNY</h4>
-        <p class="service__role">Vice President</p>
-      </div>
-      <div class="service__term">2022 – 2023</div>
-    </div>
-  </article>
-
-    <article class="service__item">
-    <div class="service__row">
-      <div>
-        <h4 class="service__title">Registered Graduate Student Organization of the Sky Happiness Club, University at Albany, SUNY</h4>
-        <p class="service__role">Assembly Representative</p>
-      </div>
-      <div class="service__term">2022 – 2023</div>
-    </div>
-  </article>
-
-
         </div>
       </section>
     </main>
 
-
-    <!--==================== FOOTER ====================-->
     <footer class="footer">
       <div class="footer__bg">
         <div class="footer__container container grid">
@@ -266,7 +315,6 @@
       </div>
     </footer>
 
-    <!--==================== SCRIPTS ====================-->
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/iconfont.js"></script>
     <script src="assets/js/main.js"></script>
