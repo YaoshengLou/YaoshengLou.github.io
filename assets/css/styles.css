@@ -718,6 +718,12 @@ img {
     font-weight: var(--font-medium);
 }
 
+.contact__title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  line-height: 1.4;
+}
+
 .contact__subtitle {
     font-size: var(--small-font-size);
     color: var(--text-color);
