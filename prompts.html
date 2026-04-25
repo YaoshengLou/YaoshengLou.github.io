@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <title>SCED Prompts | Yaosheng Lou</title>
+
+  <style>
+    .prompt-container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .prompt-box {
+      background: #111;
+      color: #eee;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-top: 1rem;
+      white-space: pre-wrap;
+      font-family: monospace;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="prompt-container">
+
+    <h1>SCED Meta-analysis Prompts</h1>
+    <p>
+      This page provides our newly developed prompts for SCED meta-analysis data extraction,
+      including both textual and graphical data extraction workflows.
+    </p>
+
+    <!-- TEXTUAL -->
+    <div class="section">
+      <h2>📄 Textual Data Extraction</h2>
+      <p>Use this prompt to extract structured information from textual reports.</p>
+
+      <div class="prompt-box">
+You are a data extraction and information retrieval specialist. Your task is to extract information strictly from the uploaded PDFs (I will upload them later, one by one). If a required field is not explicitly present in the text, enter NA. Do not infer, guess, or use general knowledge. Model settings: Set temperature = 0.
+Output file:
+1.	Create a markdown table
+2.	Row 1 headers (A–L): Study | Author | Year | Study Design | Intervention Program | Outcome Domain | Case | Age | Grade | Gender | Disability Status | Physical Setting
+3.	Start data at row 2. Each participant = one row. Duplicate study-level variables across all participants in that study. Study-level variables include Study, Author, Year, Study Design, Intervention Program, Outcome Domain.
+4.	Do not describe or explain the study. Only output the Markdown table
+Filling Rules:
+•	Study: Assign plain numbers 1, 2, 3… in the order the PDFs are uploaded/processed.
+•	Author: Extract the names of the authors. Use APA in-text format. For example, for 1–2 authors: “Smith & Lee”; for 3 or more: “Smith et al.” 
+•	Year: Use the publication year. If multiple, prefer the one labeled “published.”
+•	Study Design (Enter numeric code only from list below):
+1= Reversal design
+2= Multiple baseline design
+3= Alternating treatments design 
+4= Multiple probe design 
+5= Changing criterion design 
+6= Combined SCED designs (hybrids of two or more designs)
+7= AB/ABA 
+8= Other
+•	Intervention Program: Use the exact program name reported.
+•	Outcome Domain: Choose from the list. Separate multiple with semicolons (e.g., “Literacy; Engagement”).
+Math (e.g., calculation, counting, numeracy)
+Literacy (e.g., reading, writing, listening, comprehension)
+Communication/social skills (e.g., conversation, requesting, play interaction,)
+Problem behavior (e.g., off-task, disruption, aggression, noncompliance)
+Engagement (e.g., on-task, task completion, compliance, activity engagement)
+Others (specify in parentheses, e.g., Others (acceptance of foods)
+•	Case: Within each study, assign 1, 2, 3… in the order participants are described.
+•	Age: Extract each participant’s age in years only. If not reported, NA.
+•	Grade: Use standardized codes (PreK, K, 1, 2, …, 12, Postsecondary, higher ed). If not reported, NA.
+•	Gender: Extract each participant’s gender. If not reported, NA.
+•	Disability Status: Record verbatim diagnostic category/eligibility (e.g., ASD, ADHD, ID). If multiple labels per participant, separate with semicolons. 
+•	Physical Setting (If multiple locations fall within the same category, code using that single category number. Use code 5 only when locations span across different categories. If not reported, enter NA.)
+1= Classroom/school/University
+2= Home
+3= Clinic/lab
+4= Multiple/combination
+5= Others 
+
+      </div>
+
+      <p>
+        <a href="YOUR_GITHUB_TEXTUAL_LINK" target="_blank">
+          View on GitHub →
+        </a>
+      </p>
+    </div>
+
+    <!-- GRAPHICAL -->
+    <div class="section">
+      <h2>📊 Graphical Data Extraction</h2>
+      <p>Use this prompt to extract data from figures and charts.</p>
+
+      <div class="prompt-box">
+PASTE YOUR GRAPHICAL PROMPT HERE
+      </div>
+
+      <p>
+        <a href="YOUR_GITHUB_GRAPHICAL_LINK" target="_blank">
+          View on GitHub →
+        </a>
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
